@@ -14,6 +14,7 @@
     font-weight: var(--text-ligth);
     text-align: center;
     font-size: 5vw;
+    margin-top: 5vw;
 }
 
 .header__h2{
@@ -162,7 +163,7 @@ img {
 
     .header__h1{
         font-size: 9vw;
-        margin-top: 20vw;
+        margin-top: 30vw;
     }
 
     .header__h2{
