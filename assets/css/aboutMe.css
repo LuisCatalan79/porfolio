@@ -46,7 +46,7 @@
 }    
 .section__li{
     flex: calc(50%-2em);
-    background-color: var(--bg-secundary black);
+    background-color: var(--bg-secundary  black);
     backdrop-filter: blur(10px);
     padding: 1rem;
     border-radius: 10px;

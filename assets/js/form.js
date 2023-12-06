@@ -24,16 +24,17 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
 
         const serviceID = 'service_ys40yrb';
-        const templateID = 'template_2251i8e';
+        const templateID = 'template_2251l8e';
 
-        emailjs.sendForm(serviceID, templateID, this)
+        emailjs.sendForm(serviceID, templateID, form)
             .then(() => {
-                btn.value = 'Send Email';
-                alert('Sent!');
-            }, (error) => {
-                btn.value = 'Send Email';
+                window.alert('Sent!');
+                form.reset();
+                dialog.close();
+            })
+            .catch((error)=>{
                 alert(JSON.stringify(error));
-            });
+            }) 
     })
 
 
