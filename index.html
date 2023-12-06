@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,50 +8,341 @@
     <link rel="shortcut icon"
         href="./assets/img/portfolio-sketch-neon-icon-simple-thin-line-outline-of-education-icons-for-ui-and-ux-website-or-mobile-application-isolated-on-brick-wall-vector.jpg"
         type="image/x-icon">
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
 
-    <!-- styleshead -->
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/tecnologies.css">
+    <link rel="stylesheet" href="./assets/css/aboutMe.css">
+    <link rel="stylesheet" href="./assets/css/projets.css">
+    <link rel="stylesheet" href="./assets/css/reviews.css">
+    <link rel="stylesheet" href="./assets/css/contactMe.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
 
     <meta name="author" content="Luis Alberto Catalán Ibáñez">
-
     <meta name="description"
         content="Desarrollador Full Stack, especializado en construción de interfaces de usuarios con React y creación de API Rest con Node.js">
 
+    <meta name="keywords"
+        content="Full Stack Developers, Desarrollador Full Stack, JavaScript, CSS, HTML, REACT, GIT, Node.js, Express, SQL, Postgres, Programador con experiencia, Web Developer">
+
 
     <!-- Open Grap Protocol (OGP), es un conjunto de etiquetas que nos permite controlar mejor como compartimos nuestras paginas en redes sociales -->
-
     <meta property="og:type" content="website">
     <meta property="og:title" content="Luis Alberto Catalán Ibáñez. Full Stack Web Developer">
     <meta property="og:description"
         content="Desarrollador Full Stack, especializado en construción de interfaces de usuarios con React y creación de API Rest con Node.js #FullStackDevelopers #DesarrolladorWeb #Developers">
-
-
     <meta property="og:url" content="URL_DEL_PORTAFOLIO">
     <meta property="og:image" content="URL_DE_LA_IMAGEN">
 
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,200;1,400;1,600&family=Playfair+Display:ital,wght@1,400;1,600&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,200;1,400;1,600&family=Playfair+Display:ital,wght@1,400;1,600&display=swap">
 
     <!-- icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!--  -->
 
+    
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+  emailjs.init('2EIUsJg9NJDhYJtCY')
+  </script>
 
 </head>
 
-<body>
-    <span class="material-symbols-outlined">
-        home
-    </span>
-    <span class="material-symbols-outlined">
-        done
-    </span>
+<body class="body body--ligth body--dark">
+
+    <div id="progress"></div>
+
+
+    <nav class="nav">
+
+        <span id="menu" class="btn material-symbols-outlined">
+            menu
+        </span>
+
+        <div class="nav--menu translate--menu">
+            <ul class="nav__ul">
+
+                <li class="nav__li">
+                    <span id="btn-translate" class="btn material-symbols-outlined">
+                        g_translate
+                    </span>
+                </li>
+                <li class="nav__li">
+                    <span id="toggleModeBtn" class="btn material-symbols-outlined">
+                        <!-- dark_mode -->
+                        light_mode
+                    </span>
+                </li>
+
+            </ul>
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="#home" data-translate-es="Inicio" data-translate-en='Home'>Inicio</a></a>
+                </li>
+                <li class="nav__li"><a href="#aboutMe" data-translate-es="Sobre mí" data-translate-en='About Me'>Sobre
+                        mí</a></li>
+                <li class="nav__li"><a href="#technologies" data-translate-es="Tecnologías"
+                        data-translate-en='Technologies'>Tecnologías</a></li>
+                <li class="nav__li"><a href="#projects" data-translate-es="Proyectos"
+                        data-translate-en='Projects'>Proyectos</a></li>
+                <li class="nav__li"><a href="#reviews" data-translate-es="Reseñas"
+                        data-translate-en='Reviews'>Reseñas</a></li>
+                <li class="nav__li"><a href="#contactMe" data-translate-es="Contáctame"
+                        data-translate-en='Contact Me'>Contáctame</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <header class="header" id="home">
+        
+
+        <h1 class="header__h1">Luis Catalán</h1>
+
+        </div>
+        <div class="logo-container">
+            <img src="./assets/img/logos/logo-dark-sin-fondo.png" alt="Logo Dark" id="logo">
+            <h5 class="header__h5">Full Stack Web Developer</h5>
+        </div>
+        <div class="contenedor">
+            <h2 class="header__h2" data-translate-es="Desarrollador Web Full Stack"
+                data-translate-en="Full Stack Web Developer">Desarrollador Web Full Stack <span>&#160;</span></h2>
+        </div>
+        <div class="div--contact">
+            <a id="contactMeBtn" class="div__a" >
+                <span data-translate-es="Contáctame" data-translate-en="Contact Me">Contáctame</span>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+            <a class="div__a" download href="./assets/cv/cv_es.png" data-translate-es="Descargar"
+                data-translate-en="Download" id="downloadCv">Descargar</a>
+        </div>
+
+        <div class="morph"></div>
+
+    </header>
+
+    <main class="main">
+        <section class="section" id="aboutMe">
+            <h2 class="section__h2" data-translate-es="Sobre Mí" data-translate-en="About Me">Sobre Mí</h2>
+
+            <p class="section__p" data-translate-es="He participado en proyectos web, desarrollando una solida base técnica y una
+            mentalidad
+            enfocada en encontrar soluciones. Me caracterizo por mi habilidad para asimilar rápidamente nuevas
+            tecnologías, enfocado el liderazgo, el trabajo en equipo y la capacidad de mantener la calma bajo presíon."
+                data-translate-en="I have participated in web projects, developing a solid technical base and a mentality
+            focused on finding solutions. I am characterized by my ability to quickly assimilate new
+            technologies, focused on leadership, teamwork and the ability to remain calm under pressure.">He
+                participado en proyectos web, desarrollando una solida base técnica y una
+                mentalidad
+                enfocada en encontrar soluciones. Me caracterizo por mi habilidad para asimilar rápidamente nuevas
+                tecnologías, enfocado el liderazgo, el trabajo en equipo y la capacidad de mantener la calma bajo
+                presíon.</p>
+            <br>
+            <h3 class="section__h3" data-translate-es="¿Qué me hace único?" data-translate-en="¿What makes me unique?">
+                ¿Qué me hace único?</h3>
+            <ul class="section__ul">
+                <li class="section__li"><strong data-translate-es="Adaptabilidad"
+                        data-translate-en="Adaptability">Adaptabilidad</strong><span
+                        data-translate-es="Mi formación en ambientes tecnológicos ha perfeccionado mi adaptabilidad."
+                        data-translate-en="My training in technological environments has perfected my adaptability.">Mi
+                        formación en ambientes tecnológicos ha perfeccionado mi adaptabilidad.</span></li>
+                <li class="section__li"><strong data-translate-es="Pasión"
+                        data-translate-en="Passion">Pasión</strong><span
+                        data-translate-es="Abordo los proyectos con fervor, entuciasmo y compromiso, con el objetivo de superarme siempre, ya que la autoexigencia es fundamental en cada aspecto de mi vida profesional y personal."
+                        data-translate-en="I approach projects with fervor, enthusiasm and commitment, with the aim of always improving myself, since self-demand is fundamental in every aspect of my professional and personal life.">Abordo
+                        los proyectos con fervor, entuciasmo y compromiso, con el objetivo de superarme siempre, ya que
+                        la autoexigencia es fundamental en cada aspecto de mi vida profesional y personal.</span></li>
+                <li class="section__li"><strong data-translate-es="Compromiso"
+                        data-translate-en="Commitment">Compromiso</strong><span
+                        data-translate-es="Doy prioridad a los objetivos del proyecto, garantizando entregas oportunas y con atención al detalle."
+                        data-translate-en="I prioritize project objectives, guaranteeing timely deliveries and attention to detail.">Doy
+                        prioridad a los objetivos del proyecto, garantizando entregas oportunas y con atención al
+                        detalle.</span></li>
+                <li class="section__li"><strong data-translate-es="Visión Innovadora"
+                        data-translate-en="Innovative Vision">Visión Innovadora</strong><span
+                        data-translate-es="Busco cosntantemente estrategias innovadoras para enfrentar desafios"
+                        data-translate-en="I am constantly looking for innovative strategies to face challenges.">Busco
+                        cosntantemente estrategias innovadoras para enfrentar desafios</span></li>
+
+            </ul>
+        </section>
+
+
+        <section class="section" id="technologies">
+            <h2 class="section__h2" data-translate-es="Tecnologías" data-translate-en="Technologies">Tecnologías</h2>
+            <div class="container">
+                <div><i class='bx bxl-html5'></i>HTML</div>
+                <div><i class='bx bxs-file-css'></i>CSS</div>
+                <div><i class='bx bxl-javascript'></i>JavaScript</div>
+                <div><i class='bx bxl-git'></i>Git</div>
+                <div><i class='bx bxl-react'></i>React</div>
+                <div><i class='bx bxl-nodejs'></i>Node.js</div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="section  section--projects">
+            <h2 class="section__h2" data-translate-es="Poyectos" data-translate-en="Projects">Proyectos</h2>
+
+            <article class='article'>
+
+                <button class='article__button left'>
+                  <i class='bx bx-left-arrow-alt'></i>
+                </button>
+          
+                <ul class='article__ul' id="container_projects">
+          
+                  <!-- aqui se insertaran los li -->
+                </ul>
+          
+                <button class="article__button rigth">
+                  <i class='bx bx-right-arrow-alt'></i>
+                </button>
+          
+              </article>
+
+        </section>
+        <section id="reviews" class="section section--reviws">
+            <h2 class="section__h2" data-translate-es="Reseñas" data-translate-en="Reviews">Reseñas</h2>
+            <ul class="ul--review" id="reviews-list">
+                <!-- aqui insertaremos los li -->
+            </ul>
+        </section>
+
+        <section id="contactMe" class="section">
+            <h2 class="section__h2" id="contactHeader" data-translate-en="Contact Me" data-translate-es="Contáctame">
+              Contáctame</h2>
+            <p data-translate-en="I am available through multiple channels. Choose the one you prefer:"
+              data-translate-es="Estoy disponible a través de múltiples canales. Elige el que prefieras:">Estoy disponible a
+              través de múltiples canales. Elige el que prefieras:</p>
+            <div class="contact-options">
+              <a class="contact-item" href="tel:+57 3008679850">
+                <i class='icon bx bx-phone'></i>
+                <span data-translate-en="Call Me" data-translate-es="Llámame">Llámame</span>
+              </a>
+              <a class="contact-item" href="mailto:luisalertocatalanibanez@gmail.com">
+                <i class='icon bx bxl-gmail'></i>
+                <span data-translate-en="Send me an email" data-translate-es="Envíame un correo">Envíame un correo</span>
+              </a>
+              <a class="contact-item" href="https://wa.me/+573008679850" target="_blank">
+                <i class='icon bx bxl-whatsapp'></i>
+                <span data-translate-en="WhatsApp" data-translate-es="WhatsApp">WhatsApp</span>
+              </a>
+              <a class="contact-item" href="https://www.linkedin.com/in/luis-alberto-catalan-iba%C3%B1ez-b5876a119/" target="_blank">
+                <i class='icon bx bxl-linkedin'></i>
+                <span data-translate-en="LinkedIn" data-translate-es="LinkedIn">LinkedIn</span>
+              </a>
+              <a class="contact-item" href="https://github.com/dashboard" target="_blank">
+                <i class='icon bx bxl-github'></i>
+                <span data-translate-en="GitHub" data-translate-es="GitHub">GitHub</span>
+              </a>
+            </div>
+          </section>
+        
+          
+    </main>
+
+    <footer class="footer-distributed">
+
+        <div class="footer__left">
+          <h3 class="footer__title" data-translate-en="Luis Catalán" data-translate-es="Luis Catalán">Luis Catalán</h3>
+          <p class="footer__description"
+            data-translate-en="Full-stack developer dedicated to learning and applying modern technologies to solve complex problems."
+            data-translate-es="Desarrollador Full-stack dedicado a aprender y aplicar tecnologías modernas para resolver problemas complejos.">
+            Desarrollador Full-stack dedicado a aprender y aplicar tecnologías modernas para resolver problemas complejos.
+          </p>
+        </div>
+    
+        <div class="footer__center">
+          <div class="footer__icon"><i class="bx bx-map"></i></div>
+          <p class="footer__location" data-translate-en="Barranquilla, Colombia" data-translate-es="Barranquilla, Colombia">Barranquilla, Colombia</p>
+          <p class="footer__copyright" id="yearText"></p>
+        </div>
+    
+        <div class="footer__right">
+          <a href="https://github.com/dashboard" target="_blank" class="footer__social-icon footer__social-icon--facebook">
+            <i class='bx bxl-github'></i>
+          </a>
+          <!-- <a href="https://youtube.com/yourprofile" class="footer__social-icon footer__social-icon--twitter">
+            <i class='bx bxl-youtube'></i>
+          </a> -->
+          <a href="https://www.linkedin.com/in/luis-alberto-catalan-iba%C3%B1ez-b5876a119/" target="_blank" class="footer__social-icon footer__social-icon--linkedin">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </div>
+    
+      </footer>
+    
+      <dialog id='dialog' class="dialog">
+        <button id="close_button" class="dialog__button">
+          <span class="material-symbols-outlined">
+          close
+          </span>
+
+        </button>
+        <form id="form" class="form--conteiner" method="post">
+
+          <label for="name" data-translate-en="Name:" data-translate-es="Nombre:" class="form__label">
+            Nombre:
+          </label>
+          <input type="text" id="name" name="name" required class="form__input">
+    
+    
+          <label for="email" data-translate-en="Email:" data-translate-es="Correo electronico:" class="form__label">
+            Correo electronico:
+          </label>
+          <input type="email" id="email" name="email" required class="form__input">
+    
+    
+          <label for="phone" data-translate-en="Phone:" data-translate-es="Teléfono:" class="form__label">
+            Teléfono:
+          </label>
+          <input type="tel" id="phone" name="phone" required class="form__input">
+    
+    
+          <label for="message" data-translate-en="Message:" data-translate-es="Mensaje:" class="form__label">
+            Mensaje:
+          </label>
+    
+          <textarea type="text" id="message" name="message" required class="form__input form__area"> </textarea>
+          <button id="btn-send" type="submit" class="form__button" data-translate-en="Send"
+        data-translate-es="Enviar">Enviar</button>
+    
+        </form>
+      </dialog>
+
+
+    <script src="./assets/js/changeMode.js"></script>
+    <script src="./assets/js/changeLanguage.js"></script>
+    <script src="./assets/js/responsiveMenu.js"></script>
+    <script src="./assets/js/progressbar.js"></script>
+    <script src="./assets/js/promese.js"></script>
+    <script src="./assets/js/asyncAwait.js"></script>
+    <script src="./assets/js/yearText.js"></script>
+    <script src="./assets/js/form.js"></script>
 </body>
 
 </html>
+
+<!-- metodologia BEM
+
+B: BLOQUE
+E: ELEMENTO
+M: MODOFICADOR
+
+-->
