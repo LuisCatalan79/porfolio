@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded',function(){
                 const translation=phrase.getAttribute('data-translate-en')
                 phrase.textContent=translation
             }
-            document.getElementById('downloadCv').href='../../assets/cv/cv_en.png'
+            document.getElementById('downloadCv').href='../../assets/cv/cv_en.pdf'
             language='en'
         } else {
             for(const phrase of elementsToTranaslate){
                 const translation=phrase.getAttribute('data-translate-es')
                 phrase.textContent=translation
             }
-            document.getElementById('downloadCv').href='../cv/cv_es.png'
+            document.getElementById('downloadCv').href='../cv/cv_es.pdf'
             language='es'
         }  
     })
