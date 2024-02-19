@@ -99,8 +99,8 @@
                         data-translate-en='Technologies'>Tecnologías</a></li>
                 <li class="nav__li"><a href="#projects" data-translate-es="Proyectos"
                         data-translate-en='Projects'>Proyectos</a></li>
-                <li class="nav__li"><a href="#reviews" data-translate-es="Reseñas"
-                        data-translate-en='Reviews'>Reseñas</a></li>
+                <!-- <li class="nav__li"><a href="#reviews" data-translate-es="Reseñas"
+                        data-translate-en='Reviews'>Reseñas</a></li> -->
                 <li class="nav__li"><a href="#contactMe" data-translate-es="Contáctame"
                         data-translate-en='Contact Me'>Contáctame</a></li>
             </ul>
@@ -130,7 +130,7 @@
                     arrow_forward_ios
                 </span>
             </a>
-            <a class="div__a" download href="./assets/cv/cv_es.png" data-translate-es="Descargar"
+            <a class="div__a" download href="./assets/cv/cv_en.pdf" data-translate-es="Descargar"
                 data-translate-en="Download" id="downloadCv">Descargar</a>
         </div>
 
@@ -142,18 +142,14 @@
         <section class="section" id="aboutMe">
             <h2 class="section__h2" data-translate-es="Sobre Mí" data-translate-en="About Me">Sobre Mí</h2>
 
-            <p class="section__p" data-translate-es="He participado en proyectos web, desarrollando una solida base técnica y una
-            mentalidad
-            enfocada en encontrar soluciones. Me caracterizo por mi habilidad para asimilar rápidamente nuevas
-            tecnologías, enfocado el liderazgo, el trabajo en equipo y la capacidad de mantener la calma bajo presíon."
-                data-translate-en="I have participated in web projects, developing a solid technical base and a mentality
-            focused on finding solutions. I am characterized by my ability to quickly assimilate new
-            technologies, focused on leadership, teamwork and the ability to remain calm under pressure.">He
-                participado en proyectos web, desarrollando una solida base técnica y una
-                mentalidad
-                enfocada en encontrar soluciones. Me caracterizo por mi habilidad para asimilar rápidamente nuevas
-                tecnologías, enfocado el liderazgo, el trabajo en equipo y la capacidad de mantener la calma bajo
-                presíon.</p>
+            <p class="section__p" data-translate-es="Soy un desarrolador con solidas bases en frontend y backend para poder comenzar mi desarrollo en una empresa decidida a brindarme una oportunidad. Termine mis estudios de Desarrollo Web Full Stack en Academlo. Donde adquiri el conocimiento necesario para poder desarrollarme como programador front-end o back-end. adquiriendo conocimientos en HTML, CSS, JS, REACTJS, NODEJS, GTI,ETC.
+            Me caracterizo por mi habilidad para asimilar rápidamente nuevas tecnologías, enfocado el liderazgo, el trabajo en equipo y la capacidad de mantener la calma bajo
+            presión."
+                data-translate-en="I am a developer with solid foundations in frontend and backend to be able to begin my development in a company determined to give me an opportunity. I finished my Full Stack Web Development studies at Academlo. Where I acquired the necessary knowledge to be able to develop as a front-end or back-end programmer. acquiring knowledge in HTML, CSS, JS, REACTJS, NODEJS, GTI, ETC.
+                I am characterized by my ability to quickly assimilate new technologies, focused leadership, teamwork and the ability to remain calm under
+                pressure.">Soy un desarrolador con solidas bases en frontend y backend para poder comenzar mi desarrollo en una empresa decidida a brindarme una oportunidad. Termine mis estudios de Desarrollo Web Full Stack en Academlo. Donde adquiri el conocimiento necesario para poder poder desarrollarme como programador front-end o back-end. adquiriendo conocimientosen HTML, CSS, JS, REACTJS, NODEJS, GTI,ETC.
+            Me caracterizo por mi habilidad para asimilar rápidamente nuevas tecnologías, enfocado el liderazgo, el trabajo en equipo y la capacidad de mantener la calma bajo
+            presíon.</p>
             <br>
             <h3 class="section__h3" data-translate-es="¿Qué me hace único?" data-translate-en="¿What makes me unique?">
                 ¿Qué me hace único?</h3>
@@ -188,12 +184,31 @@
         <section class="section" id="technologies">
             <h2 class="section__h2" data-translate-es="Tecnologías" data-translate-en="Technologies">Tecnologías</h2>
             <div class="container">
-                <div><i class='bx bxl-html5'></i>HTML</div>
-                <div><i class='bx bxs-file-css'></i>CSS</div>
-                <div><i class='bx bxl-javascript'></i>JavaScript</div>
-                <div><i class='bx bxl-git'></i>Git</div>
-                <div><i class='bx bxl-react'></i>React</div>
-                <div><i class='bx bxl-nodejs'></i>Node.js</div>
+               <!-- HTML Card -->
+                <article class="tech-card">
+                  <span class="tech-card__front" data-tech="html"><i class='bx bxl-html5'></i></span>
+                  <span class="tech-card__back" data-translate-en="HTML" data-translate-es="HTML">HTML</span>
+                </article>
+                <article class="tech-card">
+                  <span class="tech-card__front" data-tech="css"><i class='bx bxs-file-css'></i></span>
+                  <span class="tech-card__back" data-translate-en="CSS" data-translate-es="CSS">CSS</span>
+                </article>
+                <article class="tech-card">
+                  <span class="tech-card__front" data-tech="javascript"><i class='bx bxl-javascript'></i></span>
+                  <span class="tech-card__back" data-translate-en="HTML" data-translate-es="HTML">JavaS</span>
+                </article>
+                <article class="tech-card">
+                  <span class="tech-card__front" data-tech="git"><i class='bx bxl-git'></i></span>
+                  <span class="tech-card__back" data-tech="html">Git</span>
+                </article>
+                <article class="tech-card">
+                  <span class="tech-card__front" data-tech="react"><i class='bx bxl-react'></i></span>
+                  <span class="tech-card__back">React</span>
+                </article>
+                <article class="tech-card">
+                  <span class="tech-card__front" data-tech="node"><i class='bx bxl-nodejs'></i></span>
+                  <span class="tech-card__back">Node.js</span>
+                </article>
             </div>
         </section>
 
@@ -208,7 +223,48 @@
                 </button>
           
                 <ul class='article__ul' id="container_projects">
-          
+                    <li class="article__li">
+                      <img class="article__img" src="./assets/img/proyectos/Galleta de la fortuna.png" alt="galleta de la fortuna">
+                      <h3 class="article__h3" data-translate-es="Galleta de la fortuna" data-translate-en="Fortune cookie">Galleta de la fortuna</h3>
+                      <p class="article__p" data-translate-es="Al ingresar a esta App siempre me traerá un mensaje de forma aleatoria y lo seguirá haciendo cada vez que pulse el botón de ver otro." data-translate-en="When entering this App it will always bring me a message randomly and it will continue to do so every time I press the view another button.">Al ingresar a esta App siempre me traerá un mensaje de forma aleatoria y lo seguirá haciendo cada vez que pulse el botón de ver otro.</p>
+                      <h4 class="article__h4" data-translate-es="Html, JS, REACT y CSS" data-translate-en="Html, JS, REACT and CSS">Html, JS, REACT y CSS</h4>
+                    </li>
+                    <li class="article__li">
+                      <img class="article__img" src="./assets/img/proyectos/Tarjeta del clima.png" alt="tarjeta del clima">
+                      <h3 class="article__h3" data-translate-es="Tarjeta del clima" data-translate-en="Weather card" >Tarjeta del clima</h3>
+                      <p class="article__p" data-translate-es="" data-translate-en="" ></p>
+                      <h4 class="article__h4" data-translate-es="Html, JS, REACT y CSS" data-translate-en="Html, JS, REACT and CSS">Html, JS, REACT y CSS</h4>
+                    </li>
+                    <li class="article__li">
+                      <img class="article__img" src="./assets/img/proyectos/User CRUD1.png" alt="use crud1">
+                      <h3 class="article__h3" data-translate-es="" data-translate-en="" ></h3>
+                      <p class="article__p" data-translate-es="" data-translate-en="" ></p>
+                      <h4 class="article__h4" data-translate-es="Html, JS, REACT y CSS" data-translate-en="Html, JS, REACT and CSS">Html, JS, REACT y CSS</h4>
+                    </li>
+                    <li class="article__li">
+                      <img class="article__img" src="./assets/img/proyectos/User CRUD2.png" alt="use crud2">
+                      <h3 class="article__h3" data-translate-es="" data-translate-en="" ></h3>
+                      <p class="article__p" data-translate-es="" data-translate-en="" ></p>
+                      <h4 class="article__h4" data-translate-es="Html, JS, REACT y CSS" data-translate-en="Html, JS, REACT and CSS">Html, JS, REACT y CSS</h4>
+                    </li>
+                    <li class="article__li">
+                      <img class="article__img" src="./assets/img/proyectos/Pokedex1.png" alt="pokedex1">
+                      <h3 class="article__h3" data-translate-es="" data-translate-en="" ></h3>
+                      <p class="article__p" data-translate-es="" data-translate-en="" ></p>
+                      <h4 class="article__h4" data-translate-es="Html, JS, REACT y CSS" data-translate-en="Html, JS, REACT and CSS">Html, JS, REACT y CSS</h4>
+                    </li>
+                    <li class="article__li">
+                      <img class="article__img" src="./assets/img/proyectos/pokedex2.png" alt="pokedex2">
+                      <h3 class="article__h3" data-translate-es="" data-translate-en="" ></h3>
+                      <p class="article__p" data-translate-es="" data-translate-en="" ></p>
+                      <h4 class="article__h4" data-translate-es="Html, JS, REACT y CSS" data-translate-en="Html, JS, REACT and CSS">Html, JS, REACT y CSS</h4>
+                    </li>
+                    <li class="article__li">
+                      <img class="article__img" src="./assets/img/proyectos/pokedex3.png" alt="pokedex3">
+                      <h3 class="article__h3" data-translate-es="" data-translate-en="" ></h3>
+                      <p class="article__p" data-translate-es="" data-translate-en="" ></p>
+                      <h4 class="article__h4" data-translate-es="Html, JS, REACT y CSS" data-translate-en="Html, JS, REACT and CSS">Html, JS, REACT y CSS</h4>
+                    </li>
                   <!-- aqui se insertaran los li -->
                 </ul>
           
@@ -219,12 +275,12 @@
               </article>
 
         </section>
-        <section id="reviews" class="section section--reviws">
+        <!-- <section id="reviews" class="section section--reviws">
             <h2 class="section__h2" data-translate-es="Reseñas" data-translate-en="Reviews">Reseñas</h2>
-            <ul class="ul--review" id="reviews-list">
+            <ul class="ul--review" id="reviews-list"> -->
                 <!-- aqui insertaremos los li -->
-            </ul>
-        </section>
+            <!-- </ul>
+        </section> -->
 
         <section id="contactMe" class="section">
             <h2 class="section__h2" id="contactHeader" data-translate-en="Contact Me" data-translate-es="Contáctame">
@@ -332,7 +388,7 @@
     <script src="./assets/js/changeMode.js"></script>
     <script src="./assets/js/changeLanguage.js"></script>
     <script src="./assets/js/responsiveMenu.js"></script>
-    <script src="./assets/js/progressbar.js"></script>
+    <script src="./assets/js/animation.js"></script>
     <script src="./assets/js/promese.js"></script>
     <script src="./assets/js/asyncAwait.js"></script>
     <script src="./assets/js/yearText.js"></script>

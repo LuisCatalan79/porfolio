@@ -42,7 +42,7 @@
 h2 { 
 	position:relative; 
 	float: left;
-    /* background-color: var(--bg); */
+    background-color: var(--bg);
     color: var(--text);
 	font-size: 2.5em;
     z-index: -1;
@@ -110,8 +110,8 @@ img {
 
 .morph{
     content: '';
-    width: 35vw;
-    height: 35vw;
+    width: 30vw;
+    height: 30vw;
     background-color: red;
     position: absolute;
     z-index: -1;

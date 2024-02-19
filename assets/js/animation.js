@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function(){
        sections.forEach(function(section){
         section.animate(
             [
-                {opacity:0, transform: "translateY(150px)", scale: 0.5},
+                {opacity:0, transform: "translateY(200px)", scale: 0.5},
                 {opacity:1, transform: "translateY(0)", scale: 1}
             ],
             {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     subject: section
                 }),
                 rangeStart: 'entry 10%',
-                rangeEnd:'cover 40%'
+                rangeEnd:'cover 45%'
             }
         )
        })

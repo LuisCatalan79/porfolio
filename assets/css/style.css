@@ -24,8 +24,10 @@
     --bg: #f0f0f0;
     --bg-secundary: white;
     --text: #222;
-    --morph1: #e5b2f7;
-    --morph2: #fff4a3;
+    /* --morph1: #e5b2f7;
+    --morph2: #fff4a3; */
+    --morph1: #9400D3;
+    --morph2: #FFD700;
     
 }
 
@@ -35,7 +37,8 @@
     --text:#f0f0f0;
     --morph1: #9400D3;
     --morph2: #FFD700;
-
+    /* --morph1: #e5b2f7;
+    --morph2: #fff4a3; */
 }
 
 .body {
