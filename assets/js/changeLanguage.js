@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 const translation=phrase.getAttribute('data-translate-es')
                 phrase.textContent=translation
             }
-            document.getElementById('downloadCv').href='../cv/cv_es.pdf'
+            document.getElementById('downloadCv').href='../../assets/cv/cv_es.pdf'
             language='es'
         }  
     })
