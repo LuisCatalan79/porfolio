@@ -1,5 +1,5 @@
 :root{
-  font-family: 'Inter Tight', sans-serif;
+  /* font-family: 'Inter Tight', sans-serif;
   font-family: 'Newsreader', serif;
   font-family: 'Noto Serif', serif;
   font-family: 'Playfair Display', serif;
@@ -8,7 +8,17 @@
     --text-ligth: 200;
     --text-medium: 400;
     --text-bold: 600;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; */
+    
+      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", sans-serif;
+      box-sizing: border-box;
+      font-family: 16px;
+      --text-ligth: 300;
+      --text-medium: 400;
+      --text-bold: 500;
+      scroll-behavior: smooth;    
 }
 
 *,

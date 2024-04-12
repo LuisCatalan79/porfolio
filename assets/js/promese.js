@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     left.addEventListener('click', function () {
         // window.alert('left')
-        index = (index > 0) ? --index : 7 - 1
+        index = (index > 0) ? --index : 16 - 1
         articleUl.style.transform = `translateX(-${index * 100}%)`
     })
 
     rigth.addEventListener('click', function () {
         // window.alert('rigth')
-        index = (index < 7 - 1) ? ++index : 0
+        index = (index < 16 - 1) ? ++index : 0
         articleUl.style.transform = `translateX(-${index * 100}%)`
     })
 
